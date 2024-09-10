@@ -1,0 +1,173 @@
+/* Fuente retro */
+
+
+
+/* Encabezado retro */
+header {
+    background-color: #ff7f00; /* Naranja */
+    color: #ffffff; /* Blanco */
+    padding: 20px;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 48px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #ffffff; /* Blanco */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00a859; /* Verde */
+}
+
+/* Sección de introducción */
+#intro {
+    padding: 40px 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente blanco */
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#intro h2 {
+    font-size: 36px;
+    color: #0077cc; /* Azul */
+}
+
+#intro p {
+    font-size: 20px;
+    color: #333;
+}
+
+/* Pie de página retro */
+footer {
+    background-color: #333333; /* Gris oscuro */
+    color: #ffffff; /* Blanco */
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* Efecto retro en los botones */
+nav ul li a,
+#intro h2,
+footer {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra retro */
+}
+
+/* Estilo de hover en el pie de página */
+footer p:hover {
+    color: #ff7f00; /* Naranja */
+}
+
+
+
+/* Sección de servicios */
+#services {
+    padding: 40px 20px;
+    background-color: rgba(255, 255, 255, 0.062);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    
+    /* Centrar horizontal y verticalmente */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrado horizontal */
+    justify-content: center; /* Centrado vertical */
+}
+
+#services h2 {
+    font-size: 36px;
+    color: #009ccc; /* Azul retro */
+    text-align: center;
+}
+#services h2 {
+    border: 3px solid #ffffff; /* Define el grosor y el color del borde */
+    padding: 10px;             /* Añade espacio entre el texto y el borde */
+    display: inline-block;      /* Hace que el borde se ajuste solo al contenido */
+    border-radius: 8px;         /* Bordes redondeados */
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Añade sombra para darle profundidad */
+}
+
+.service-item {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    
+    /* Centrar cada servicio */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos dentro de cada servicio */
+    text-align: center;
+}
+
+.service-item h3 {
+    font-size: 28px;
+    color: #ff7f00; /* Naranja retro */
+    margin-bottom: 10px;
+}
+
+.service-item img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.service-item p {
+    font-size: 18px;
+    color: #333;
+    max-width: 600px; /* Limitar el ancho del texto para que esté centrado */
+}
+
+/* Ajuste responsivo */
+@media (max-width: 768px) {
+    .service-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .service-item img {
+        margin-bottom: 15px;
+        width: 100%;
+        height: auto;
+    }
+}
+body {
+    background-image: url('assets/images/Madera');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
